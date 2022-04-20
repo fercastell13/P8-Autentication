@@ -10,7 +10,7 @@ const access = promisify(fs.access);
 const REG_URL = /(\b(http|ftp|https|ftps):\/\/[-A-ZáéíóúÁÉÍÓÚ0-9+&@#\/%?=~_|!:,.;]*[-A-ZáéíóúÁÉÍÓÚ0-9+&@#\/%=~_|])/ig;
 
 // If we are in DEBUG mode, the output will be more verbose
-const DEBUG =  typeof process.env.DEBUG !== "undefined" && (process.env.DEBUG === "true" || process.env.DEBUG === 1);
+const DEBUG =  typeof process.env.DEBUG !== "undefined" && (process.env.DEBUG !== "" || process.env.DEBUG === 1);
 console.log("DEBUG:", DEBUG);
 
 const WAIT =  typeof process.env.WAIT !== "undefined"?parseInt(process.env.WAIT):50000;
@@ -127,7 +127,12 @@ TestUtils.search = (b, a) => {
 var orig_it = it;
 var num_tests = 1;
 
-TestUtils.scored = (name, score, func) => {
+// TODO: Integrar bien con un logger
+TestUtils.log = function () {
+    if(DEBUG) {console.log.apply(this, arguments );}
+};
+
+TestUtils.scored = function(name, score, func) {
     name = `${num_tests}: ${name}`;
     num_tests++;
     return orig_it(name, async function () {
@@ -135,8 +140,8 @@ TestUtils.scored = (name, score, func) => {
         this.score = critical? 0 :score;
         this.msg_ok = null;
         this.msg_err = null;
-        if(error_critical) {
-            this.msg_err = "Un test crítico ha fallado, no podemos continuar hasta que pasen todos los tests críticos.";
+        if(error_critical && !critical) {
+            this.msg_err = `Un test crítico falló (${error_critical}), no podemos continuar hasta que pasen todos los tests críticos.`;
             throw Error(this.msg_err);
         } 
         if(FILTER && !FILTER.test(name)) {
@@ -157,17 +162,12 @@ TestUtils.scored = (name, score, func) => {
                 this.msg_err =  "";
             }
             if (critical) {
-                console.log('Se ha producido un error crítico, se cancelan el resto de tests.')
-                error_critical = this.msg_err;
+                console.log(`Se ha producido un error crítico. No se van a lanzar el resto de tests.`)
+                error_critical = name;
             }
             throw(e);
         }
     });
-};
-
-// TODO: Integrar bien con un logger
-TestUtils.log = function () {
-    if(DEBUG) {console.log.apply(this, arguments );}
 };
 
 // Path with the solution, by default it is set to the parent of /tests/
@@ -197,5 +197,7 @@ TestUtils.warn_errors = function() {
 TestUtils.create_browser = function(url, wait=WAIT) {
     return new Browser({"waitDuration": wait, "silent": true, "runScripts": false });
 };
+
+TestUtils.has_failed = function() { return error_critical };
 
 module.exports = TestUtils;
