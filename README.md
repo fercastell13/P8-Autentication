@@ -73,11 +73,30 @@ Importar y configurar el paquete en **app.js**:
     . . .
     var session = require('express-session');
     . . .
+
     // Configuracion de la session para almacenarla en BBDD Redis.
     app.use(session({secret: "Blog 2022",
                      resave: false,
                      saveUninitialized: true}));
     . . .
+    
+    // Este middleware nos permite usar loginUser en las vistas (usando locals.loginUser)
+    // Debe añadirse antes que el indexRouter
+    app.use(function(req, res, next) {
+
+      console.log(">>>>>>>>>>>>>>", req.session.loginUser);
+
+      // To use req.loginUser in the views
+      res.locals.loginUser = req.session.loginUser && {
+        id: req.session.loginUser.id,
+        username: req.session.loginUser.username,
+        email: req.session.loginUser.email,
+        isAdmin: req.session.loginUser.isAdmin
+      };
+
+      next();
+    });
+
 
 ### Tarea 3 - Desarrollar el modelo
 
@@ -210,4 +229,3 @@ En el enlace **https://www.npmjs.com/package/autocorector** se proveen instrucci
 - **10%:** La petición DELETE /users/:userId borra el usuario indicado
 
 Si pasa todos los tests se dará la máxima puntuación.
-
