@@ -172,8 +172,12 @@ LLegados a este punto ya se ha terminado todo el desarrollo de la práctica.
 
 Solo falta aplicar las migraciones y seeders ejecutando:
 
+      # sistemas unix
       npm run migrate
-      npx sequelize db:seed --seed seeders/20220119165500-FillUsersTable.js --url sqlite://$(pwd)/blog.sqlite
+      npm run seed
+      # sistemas windows
+      npm run migrate_win
+      npm run seed_win
 
 y probar el funcionamiento del nuevo servidor.
 
