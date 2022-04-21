@@ -7,7 +7,7 @@
         "githubURL": "CORE-UPM/P7_Autenticacion",
         "serverUrl": "https://autocorector.dit.upm.es/",
         "courseId": "395",
-        "assignmentId": ""
+        "assignmentId": "53136"
     },
     "dependencies": {
         "sequelize": "^6.17.0",
