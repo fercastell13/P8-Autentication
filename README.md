@@ -37,11 +37,11 @@ Para esta práctica se pide que estas mismas definiciones se hagan en **routes/i
 Es necesario utilizar la **versión 16 de Node.js** para el desarrollo de esta práctica.
 El proyecto debe clonarse en el ordenador en el que se está trabajando:
 
-    $ git clone https://github.com/CORE-2020/P7_autenticacion
+    $ git clone https://github.com/CORE-2020/P7_Autenticacion
 
 A continuación se debe acceder al directorio de trabajo, e instalar todas las dependencias propias de esta práctica.
 
-    $ cd P7_autenticacion
+    $ cd P7_Autenticacion
     $ npm install
 
 ## Tareas
@@ -50,14 +50,14 @@ A continuación se debe acceder al directorio de trabajo, e instalar todas las d
 
 En esta práctica hay que continuar y ampliar el desarrollo realizado en la práctica 6.
 
-El alumno debe copiar el directorio **blog** de la **Entrega6_posts** en el directorio **P7_autenticacion/blog** de
-esta práctica 7. Las tareas a realizar en esta práctica 7 de desarrollarán dentro del directorio **P7_autenticacion/blog**.
+El alumno debe copiar el directorio **blog** de la **Entrega6_posts** en el directorio **P7_Autenticacion/blog** de
+esta práctica 7. Las tareas a realizar en esta práctica 7 de desarrollarán dentro del directorio **P7_Autenticacion/blog**.
 
-Para copiar/duplicar el directorio **Entrega6_posts/blog** en el directorio **P7_autenticacion/blog**, puede usar un
+Para copiar/duplicar el directorio **Entrega6_posts/blog** en el directorio **P7_Autenticacion/blog**, puede usar un
 explorador de archivos. Asegúrese de copiar el directorio y no de moverlo de sitio, para no perder el trabajo original.
 También puede ejecutar el siguiente comando en un terminal unix para copiar el directorio y todo su contenido:
 
-    $ cp -r PATH_DE_PRACTICA_6/Entrega6_posts/blog PATH_DE_PRACTICA_7/P7_autenticacion/.
+    $ cp -r PATH_DE_PRACTICA_6/Entrega6_posts/blog PATH_DE_PRACTICA_7/P7_Autenticacion/.
 
 ### Tarea 2 - Instalación de paquetes
 
