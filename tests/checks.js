@@ -19,7 +19,7 @@ let browser = create_browser();
 var server;
 
 
-describe("Tests Práctica 2", function() {
+describe("Tests Práctica 7", function() {
     after(function () {
         warn_errors();
     });
@@ -47,7 +47,7 @@ describe("Tests Práctica 2", function() {
 
             (mig.length).should.be.equal(1);
             this.msg_err = `La migración no incluye el campo email`;
-            console.log(mig[0]);
+            log(mig[0]);
             let templ = fs.readFileSync(path.join(PATH_ASSIGNMENT, "migrations", mig[0]));
             /email/.test(templ).should.be.equal(true);
 
@@ -170,7 +170,6 @@ describe("Tests Práctica 2", function() {
             this.msg_err = "La URL /users no está disponible";
             await browser.visit("/users");
             browser.assert.status(200);
-            console.log(browser.html());
             for (const usuario of users) {
                 browser.html().includes(usuario.username).should.be.equal(true);
             }
@@ -253,10 +252,11 @@ describe("Tests Práctica 2", function() {
                 let user = users[idx];
                 await browser.visit(`/users/${user.id}/edit`);
                 this.msg_err = `La página del user "${user.title}" (/users/${user.id}) no parece permitir editar correctamente`;
-                this.msg_err = `La página /users/new no incluye el formulario de creación de un usuario correcto`;
+                this.msg_err = `La página /users/${user.id}/edit no incluye alguno de los elementos del formulario`;
                 browser.assert.element('#user_password');
                 browser.assert.element('#email');
                 browser.assert.element('input[type=submit]');
+                this.msg_err = `La página /users/${user.id}/edit no incluye alguno de los elementos rellenos en el formulario`;
                 browser.html().includes(user.email).should.be.equal(true);
                 browser.html().includes(user.id).should.be.equal(true);
                 browser.html().includes(user.username).should.be.equal(true);
@@ -292,7 +292,7 @@ describe("Tests Práctica 2", function() {
                 await browser.fill('#password', new_pass);
                 await browser.pressButton('input[name=commit]');
                 // It should not redirect to the login page
-                console.log(browser.location.href);
+                log(browser.location.href);
                 browser.location.href.includes("login").should.be.equal(false);
             }
         });
