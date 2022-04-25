@@ -37,7 +37,7 @@ Para esta práctica se pide que estas mismas definiciones se hagan en **routes/i
 Es necesario utilizar la **versión 16 de Node.js** para el desarrollo de esta práctica.
 El proyecto debe clonarse en el ordenador en el que se está trabajando:
 
-    $ git clone https://github.com/CORE-2020/P7_Autenticacion
+    $ git clone https://github.com/CORE-UPM/P7_Autenticacion
 
 A continuación se debe acceder al directorio de trabajo, e instalar todas las dependencias propias de esta práctica.
 
