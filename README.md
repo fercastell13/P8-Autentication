@@ -1,6 +1,6 @@
 # Práctica 7: Autenticación
 
-Versión: 7 de Febrero de 2022
+Versión: 25 de Enero de 2023
 
 ## Objetivos
 * Afianzar los conocimientos obtenidos sobre el uso de Express para desarrollar servidores web.
@@ -34,15 +34,8 @@ Para esta práctica se pide que estas mismas definiciones se hagan en **routes/i
 
 ## Descargar el código del proyecto
 
-Es necesario utilizar la **versión 16 de Node.js** para el desarrollo de esta práctica.
-El proyecto debe clonarse en el ordenador en el que se está trabajando:
+Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/main/README.md#descargar-el-c%C3%B3digo-del-proyecto).
 
-    $ git clone https://github.com/CORE-UPM/P7_Autenticacion
-
-A continuación se debe acceder al directorio de trabajo, e instalar todas las dependencias propias de esta práctica.
-
-    $ cd P7_Autenticacion
-    $ npm install
 
 ## Tareas
 
@@ -182,44 +175,27 @@ Solo falta aplicar las migraciones y seeders ejecutando:
 y probar el funcionamiento del nuevo servidor.
 
 
+## Pruebas con el autocorector
 
-## Prueba de la práctica
+Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/main/README.md#pruebas-con-el-autocorector).
 
-Para ayudar al desarrollo, se provee una herramienta de autocorrección que prueba las distintas funcionalidades que se piden en el enunciado. Para utilizar esta herramienta debes tener node.js (y npm) (https://nodejs.org/es/) y Git instalados.
+## Pruebas manuales y capturas de pantalla
 
-Para instalar y hacer uso de la herramienta de autocorrección en el ordenador local, ejecuta los siguientes comandos en el directorio raíz del proyecto, es decir, en el directorio padre del directorio **post**:
+Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/main/README.md#pruebas-manuales-y-capturas-de-pantalla).
 
-    $ sudo npm install -g autocorector    ## Instala el programa de test
-    $ autocorector                   ## Pasa los tests al fichero a entregar
-    ............................     ## en el directorio de trabajo
-    ... (resultado de los tests)
+Capturas a entregar con esta práctica: 
 
-También se puede instalar como paquete local, en el caso de que no dispongas de permisos en
-el ordenador en el que estás trabajando:
-
-    $ npm install autocorector     ## Instala el programa de test
-    $ npx autocorector             ## Pasa los tests al fichero a entregar
-    ............................   ## en el directorio de trabajo
-    ... (resultado de los tests)
-
-Se puede pasar la herramienta de autocorrección tantas veces como se desee sin ninguna repercusión en la calificación.
-
-
+- Captura 1:
+- Captura 2:
 
 ## Instrucciones para la Entrega y Evaluación.
 
-Una vez satisfecho con su calificación, el alumno puede subir su entrega a Moodle con el siguiente comando:
+Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/main/README.md#instrucciones-para-la-entrega-y-evaluaci%C3%B3n
+).
 
-    $ autocorector --upload
+## Rúbrica
 
-o, si se ha instalado como paquete local:
-
-    $ npx autocorector --upload
-
-La herramienta de autocorrección preguntará por el correo del alumno y el token de Moodle.
-En el enlace **https://www.npmjs.com/package/autocorector** se proveen instrucciones para encontrar dicho token.
-
-**RÚBRICA**: Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
+Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
 
 - **10%:** Se atiende la petición GET /users
 - **10%:** La petición GET /users muestra todos los usuarios.
