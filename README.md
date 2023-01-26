@@ -9,7 +9,7 @@ Versión: 25 de Enero de 2023
 
 ## Descripción de la práctica
 
-En esta práctica 7 se ampliará la *Práctica 6* (Blog) añadiendo gestión de usuarios y la funcionalidad de autenticación.
+En esta práctica 8 se ampliará la *Práctica 7* (Blog) añadiendo gestión de usuarios y la funcionalidad de autenticación.
 
 Se creará una tabla en la BBDD para almacenar los datos de los usuarios, y se implementará un API REST para
 crearlos, consultarlos, actualizarlos y borrarlos.
@@ -41,16 +41,16 @@ Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/m
 
 ### Tarea 1 - Copiar el trabajo ya realizado en la Entrega 6 Posts
 
-En esta práctica hay que continuar y ampliar el desarrollo realizado en la práctica 6.
+En esta práctica hay que continuar y ampliar el desarrollo realizado en la práctica 7.
 
-El alumno debe copiar el directorio **blog** de la **Entrega6_posts** en el directorio **P7_Autenticacion/blog** de
-esta práctica 7. Las tareas a realizar en esta práctica 7 de desarrollarán dentro del directorio **P7_Autenticacion/blog**.
+El alumno debe copiar el directorio **blog** de la **Entrega7_posts** en el directorio **P8_Autenticacion/blog** de
+esta práctica 8. Las tareas a realizar en esta práctica 8 de desarrollarán dentro del directorio **P8_Autenticacion/blog**.
 
-Para copiar/duplicar el directorio **Entrega6_posts/blog** en el directorio **P7_Autenticacion/blog**, puede usar un
+Para copiar/duplicar el directorio **Entrega7_posts/blog** en el directorio **P8_Autenticacion/blog**, puede usar un
 explorador de archivos. Asegúrese de copiar el directorio y no de moverlo de sitio, para no perder el trabajo original.
 También puede ejecutar el siguiente comando en un terminal unix para copiar el directorio y todo su contenido:
 
-    $ cp -r PATH_DE_PRACTICA_6/Entrega6_posts/blog PATH_DE_PRACTICA_7/P7_Autenticacion/.
+    $ cp -r PATH_DE_PRACTICA_7/Entrega7_posts/blog PATH_DE_PRACTICA_8/P8_Autenticacion/.
 
 ### Tarea 2 - Instalación de paquetes
 
