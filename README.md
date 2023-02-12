@@ -185,8 +185,36 @@ Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/m
 
 Capturas a entregar con esta práctica: 
 
-- Captura 1:
-- Captura 2:
+- Captura 1: Captura de la pantalla que muestra el formulario para hacer login. 
+  Deben verse los campos del formulario.
+<kbd>
+<img src="https://github.com/CORE-UPM/P8_Autenticacion/blob/master/Captura.8.1.png" alt="captura de pantalla" width="500"/>
+</kbd>
+
+- Captura 2: Captura de la pantalla que muestra el listado de todos los usuarios cuando no hay nadie loguedo. 
+  Debe verse la cabecera de la página donde se muestra el botón de login.
+<kbd>
+<img src="https://github.com/CORE-UPM/P8_Autenticacion/blob/master/Captura.8.2.png" alt="captura de pantalla" width="500"/>
+</kbd>
+
+- Captura 3: Captura de la pantalla que muestra el listado de todos los usuarios cuando hay un usuario loguedo. 
+  Debe verse la cabecera de la página donde se muestra el botón de logout.
+<kbd>
+<img src="https://github.com/CORE-UPM/P8_Autenticacion/blob/master/Captura.8.3.png" alt="captura de pantalla" width="500"/>
+</kbd>
+
+- Captura 4: Captura de la pantalla que muestra un único usuario. 
+  Realice esta captura cuando hay un usuario logueado.
+  Deben verse los valores username, isAdmin e email del usuario, y la cabecera de la página con el botón de logout.
+<kbd>
+<img src="https://github.com/CORE-UPM/P8_Autenticacion/blob/master/Captura.8.4.png" alt="captura de pantalla" width="500"/>
+</kbd>
+
+- Captura 5: Captura de la pantalla que muestra el formulario para crear un nuevo usuario. Realice esta captura cuando no hay ningún usuario logueado.
+  Deben verse los campos del formulario, y la cabecera de la página con el botón de login.
+<kbd>
+<img src="https://github.com/CORE-UPM/P8_Autenticacion/blob/master/Captura.8.5.png" alt="captura de pantalla" width="500"/>
+</kbd>
 
 ## Instrucciones para la Entrega y Evaluación.
 
