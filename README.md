@@ -1,6 +1,6 @@
 # Práctica 8: Autenticación
 
-Versión: 25 de Enero de 2023
+Versión: 13 de Febrero de 2023
 
 ## Objetivos
 * Afianzar los conocimientos obtenidos sobre el uso de Express para desarrollar servidores web.
@@ -188,32 +188,32 @@ Capturas a entregar con esta práctica:
 - Captura 1: Captura de la pantalla que muestra el formulario para hacer login. 
   Deben verse los campos del formulario.
 <kbd>
-<img src="https://github.com/CORE-UPM/P8_Autenticacion/blob/master/Captura.8.1.png" alt="captura de pantalla" width="500"/>
+<img src="https://user-images.githubusercontent.com/716928/218465892-dbcbaf9e-aed0-4177-99d4-c5435aa7d735.png" alt="captura de pantalla" width="500"/>
 </kbd>
 
 - Captura 2: Captura de la pantalla que muestra el listado de todos los usuarios cuando no hay nadie loguedo. 
   Debe verse la cabecera de la página donde se muestra el botón de login.
 <kbd>
-<img src="https://github.com/CORE-UPM/P8_Autenticacion/blob/master/Captura.8.2.png" alt="captura de pantalla" width="500"/>
+<img src="https://user-images.githubusercontent.com/716928/218465906-7e19bd0f-b002-4b11-a8bf-a65e729f0a1a.png" alt="captura de pantalla" width="500"/>
 </kbd>
 
 - Captura 3: Captura de la pantalla que muestra el listado de todos los usuarios cuando hay un usuario loguedo. 
   Debe verse la cabecera de la página donde se muestra el botón de logout.
 <kbd>
-<img src="https://github.com/CORE-UPM/P8_Autenticacion/blob/master/Captura.8.3.png" alt="captura de pantalla" width="500"/>
+<img src="https://user-images.githubusercontent.com/716928/218465920-f11f3b64-b26d-463c-b816-952d24c2d823.png" alt="captura de pantalla" width="500"/>
 </kbd>
 
 - Captura 4: Captura de la pantalla que muestra un único usuario. 
   Realice esta captura cuando hay un usuario logueado.
   Deben verse los valores username, isAdmin e email del usuario, y la cabecera de la página con el botón de logout.
 <kbd>
-<img src="https://github.com/CORE-UPM/P8_Autenticacion/blob/master/Captura.8.4.png" alt="captura de pantalla" width="500"/>
+<img src="https://user-images.githubusercontent.com/716928/218465933-42acae2e-8593-4534-b6e7-ff40e69f98b0.png" alt="captura de pantalla" width="500"/>
 </kbd>
 
 - Captura 5: Captura de la pantalla que muestra el formulario para crear un nuevo usuario. Realice esta captura cuando no hay ningún usuario logueado.
   Deben verse los campos del formulario, y la cabecera de la página con el botón de login.
 <kbd>
-<img src="https://github.com/CORE-UPM/P8_Autenticacion/blob/master/Captura.8.5.png" alt="captura de pantalla" width="500"/>
+<img src="https://user-images.githubusercontent.com/716928/218465958-4c68c007-0267-4576-8d50-afdf929031bc.png" alt="captura de pantalla" width="500"/>
 </kbd>
 
 ## Instrucciones para la Entrega y Evaluación.
