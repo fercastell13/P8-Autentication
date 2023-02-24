@@ -3,6 +3,8 @@
     "author": "CORE-UPM",
     "license": "GNU",
     "version": "0.1.1",
+    "capturesFolder": "miscapturas",
+    "capturesNumber": 5,
     "info": {
         "githubURL": "CORE-UPM/P8_Autenticacion",
         "serverUrl": "https://aat.dit.upm.es/",
